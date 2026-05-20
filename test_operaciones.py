@@ -9,6 +9,7 @@ class TestOperaciones(unittest.TestCase):
         self.assertEqual(sumar(3, 2), 5)
         self.assertEqual(sumar(-1, 1), 0)
         self.assertEqual(sumar(-1, -1), -2)
+        self.assertEqual(sumar(-1, -2), -3)
 
     def test_restar(self):
         self.assertEqual(restar(3, 2), 1)
@@ -18,7 +19,7 @@ class TestOperaciones(unittest.TestCase):
     def test_multiplicar(self):
         self.assertEqual(multiplicar(3, 2), 6)
         self.assertEqual(multiplicar(-1, 1), -1)
-        self.assertEqual(multiplicar(-1, -1), 1)
+        self.assertEqual(multiplicar(31, -1), 1)
 
     def test_dividir(self):
         self.assertEqual(dividir(4, 2), 2)
